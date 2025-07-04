@@ -274,7 +274,7 @@ async def process_nogged_image(update: Update, context: ContextTypes.DEFAULT_TYP
         return
 
     nog_prompt_core = get_prompt_by_key(prompt_key)
-    nog_prompt = AI_DISCLAIMER_PROMPT + nog_prompt_core
+    nog_prompt = AI_DISCLAIMER_PROMPT + COMPLEXION_PROMPT + nog_prompt_core
     await query.message.reply_text(f"doing the '{prompt_key.upper()}' filter nigga", reply_to_message_id=query.message.message_id)
 
     temp_path = f"nogged_processing_{query.id}.png"
