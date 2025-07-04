@@ -301,7 +301,7 @@ async def process_nogged_image(update: Update, context: ContextTypes.DEFAULT_TYP
 
     # Only OG button and Share on X button are kept as requested
     keyboard = InlineKeyboardMarkup([
-        [InlineKeyboardButton("OG", callback_data='nog')],
+        [InlineKeyboardButton("NOG", callback_data='nog')],
         [InlineKeyboardButton("🚀 Share on X", callback_data='share_x')]
     ])
 
