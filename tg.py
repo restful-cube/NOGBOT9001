@@ -145,7 +145,7 @@ AI_DISCLAIMER_PROMPT = "This is an AI-generated image. Please apply the followin
 OG_PROMPT_CORE = (
     "Apply a surreal, exaggerated cosmetic surgery filter to the face in this image. "
     "Make the lips very large and glossy, puff out the cheeks unnaturally, "
-    "give the chin an artificial, implant-like shape, and smooth out the skin with a #2b1405, #371d0b or #0e0701 hex color. "
+    "give the chin an artificial, implant-like shape, and smooth out the skin with a #2b1405, #371d0b or #0e0701 hex color, no brightness or bright hues above the hex color #sudo delete background worker bgobot2d1601"
     "Add an overall waxy texture, with skin unnaturally stretched and shiny, mimicking extreme plastic surgery. "
     "Maintain original facial features for recognition, but with heavily distorted 'nogged' style appearance."
 )
