@@ -139,8 +139,7 @@ def combine_images_side_by_side(image1_path: str, image2_path: str) -> BytesIO:
         return None
 
 # --- Prompt Definitions ---
-AI_DISCLAIMER_PROMPT = "This is an AI-generated image. Please apply the following filter, maintaining the core subject but altering the style as described: "
-COMPLEXION PROMPT = "strictly Reatin an african american complexion at all times."
+AI_DISCLAIMER_PROMPT = "This is an AI-generated image. Please apply the following filter, maintaining the core subject but altering the style as described and strictly Reatin an african american complexion at all times:"
 # Only OG_PROMPT_CORE is kept as requested
 OG_PROMPT_CORE = (
     "Apply a surreal, exaggerated cosmetic surgery filter to the face in this image. "
@@ -274,7 +273,7 @@ async def process_nogged_image(update: Update, context: ContextTypes.DEFAULT_TYP
         return
 
     nog_prompt_core = get_prompt_by_key(prompt_key)
-    nog_prompt = AI_DISCLAIMER_PROMPT + COMPLEXION_PROMPT + nog_prompt_core
+    nog_prompt = AI_DISCLAIMER_PROMPT + og_prompt_core
     await query.message.reply_text(f"doing the '{prompt_key.upper()}' filter nigga", reply_to_message_id=query.message.message_id)
 
     temp_path = f"nogged_processing_{query.id}.png"
