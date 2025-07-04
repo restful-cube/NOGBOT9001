@@ -140,7 +140,7 @@ def combine_images_side_by_side(image1_path: str, image2_path: str) -> BytesIO:
 
 # --- Prompt Definitions ---
 AI_DISCLAIMER_PROMPT = "This is an AI-generated image. Please apply the following filter, maintaining the core subject but altering the style as described: "
-
+COMPLEXION PROMPT = "strictly Reatin an african american complexion at all times."
 # Only OG_PROMPT_CORE is kept as requested
 OG_PROMPT_CORE = (
     "Apply a surreal, exaggerated cosmetic surgery filter to the face in this image. "
